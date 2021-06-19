@@ -1,6 +1,7 @@
 import React from "react";
 import SingleProduct from "./SingleProduct";
-const fakeData = [
+
+export const fakeData = [
   { id: "1", brand: "nokia", price: "$500" },
   { id: "2", brand: "samsung", price: "$500" },
   { id: "3", brand: "apple", price: "$500" },

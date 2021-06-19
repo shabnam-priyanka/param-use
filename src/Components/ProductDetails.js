@@ -1,12 +1,17 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { fakeData } from "./AllProjects";
 
 const ProductDetails = () => {
-  // const { para } = useParams();
-  console.log(useParams());
+  const { para } = useParams();
+
+  const targetedPd = fakeData.find((td) => td.id == para);
+
   return (
     <div>
-      <h1>This is product details</h1>
+      <h1> Product Id{targetedPd.id} </h1>
+      <h1>Brand: {targetedPd.brand} </h1>
+      <h1>Price {targetedPd.price} </h1>
     </div>
   );
 };
